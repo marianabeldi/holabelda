@@ -1,18 +1,24 @@
 <template>
     <div>
-        <Header title="Hola! My name is Mariana." text="I'm a designer from Argentina."/>
+        <Header title="Hola! My name is Mariana." text="I'm a designer from Argentina, building websites since 2006."/>
       <main class="pattern border-top">
         <div class="wrapper">
           <div class="articles cards">
             <h2>Articles</h2>
+            <a class="card" href="https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/" target="_blank" rel="noopener">
+              <img src="./../assets/images/th-css_tricks03.jpg" alt="" loading="lazy">
+              <p class="card-subtitle">Article</p>
+              <h3>How to Simplify SVG Code Using Basic Shapes</h3>
+              <p class="view read">Read on CSS-tricks</p>
+            </a>
             <a class="card" href="https://css-tricks.com/use-and-reuse-everything-in-svg-even-animations/" target="_blank" rel="noopener">
-              <img src="./../assets/images/th-css_tricks01.jpg" alt="CSS-Tricks article" loading="lazy">
+              <img src="./../assets/images/th-css_tricks01.jpg" alt="" loading="lazy">
               <p class="card-subtitle">Article</p>
               <h3>Use and Reuse Everything in SVG… Even Animations!</h3>
               <p class="view read">Read on CSS-tricks</p>
             </a>
             <a class="card" href="https://css-tricks.com/going-beyond-automatic-svg-compression-with-the-use-element/" target="_blank" rel="noopener">
-              <img src="./../assets/images/th-css_tricks02.jpg" alt="CSS-Tricks article" loading="lazy">
+              <img src="./../assets/images/th-css_tricks02.jpg" alt="" loading="lazy">
               <p class="card-subtitle">Article</p>
               <h3>Going Beyond Automatic SVG Compression With the “use” Element</h3>
               <p class="view read">Read on CSS-tricks</p>
@@ -20,14 +26,20 @@
           </div>
           <div class="articles cards">
             <h2>Case Studies</h2>
+            <a class="card" href="https://medium.muz.li/adding-value-to-our-clients-platform-and-brand-fdf94856116" target="_blank" rel="noopener">
+              <img src="./../assets/images/th-sod-.jpg" alt="" loading="lazy">
+              <p class="card-subtitle">Illustration & Brand</p>
+              <h3>Adding value to our client's platform and brand</h3>
+              <p class="view read">Read on Muzli</p>
+            </a>
             <a class="card" href="https://medium.muz.li/leniolabs-brand-website-redesign-65d80c7bbb07" target="_blank" rel="noopener">
-              <img src="./../assets/images/th-leniolabs.png" alt="Album cover" loading="lazy">
+              <img src="./../assets/images/th-leniolabs.png" alt="" loading="lazy">
               <p class="card-subtitle">Web & Brand redesign</p>
               <h3>Leniolabs</h3>
               <p class="view read">Read on Muzli</p>
             </a>
             <a class="card" href="https://medium.muz.li/comfort-shatter-6f533b83d37e" target="_blank" rel="noopener">
-              <img src="./../assets/images/th-comfort.jpg" alt="Album cover" loading="lazy">
+              <img src="./../assets/images/th-comfort.jpg" alt="" loading="lazy">
               <p class="card-subtitle">App prototype</p>
               <h3>Comfort Shatter</h3>
               <p class="view read">Read on Muzli</p>

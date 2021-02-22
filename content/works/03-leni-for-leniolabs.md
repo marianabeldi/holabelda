@@ -40,35 +40,35 @@ category:
             <li><a target="_blank" rel="noreferrer" href="https://www.behance.net/gallery/90294769/Leniolabs_-merchandising" class="heart">Behance</a></li>
         </ul>
     </div>
-    <li><img src="/work/leni-01.jpg"></li>
-    <li><img src="/work/leni-02.jpg"></li>
-    <li><img src="/work/leni-03.jpg"></li>
-    <li><img src="/work/leni-04.jpg"></li>
-    <li><img src="/work/leni-06.jpg"></li>
-    <li><img src="/work/leni-07.jpg"></li>
-    <li><img src="/work/leni-08.jpg"></li>
-    <li><img src="/work/leni-09.jpg"></li>
-    <li><img src="/work/leni-10.jpg"></li>
-    <li><img src="/work/leni-11.jpg"></li>
-    <li><img src="/work/leni-12.jpg"></li>
-    <li><img src="/work/leni-13.jpg"></li>
-    <li><img src="/work/leni-14.jpg"></li>
-    <li><img src="/work/leni-15.jpg"></li>
-    <li><img src="/work/leni-16.jpg"></li>
-    <li><img src="/work/leni-17.jpg"></li>
-    <li><img src="/work/leni-18.jpg"></li>
-    <li><img src="/work/leni-19.jpg"></li>
-    <li><img src="/work/leni-20.jpg"></li>
-    <li><img src="/work/leni-21.jpg"></li>
-    <li><img src="/work/leni-22.png"></li>
-    <li><img src="/work/leni-23.jpg"></li>
-    <li><img src="/work/leni-24.jpg"></li>
-    <li><img src="/work/leni-25.jpg"></li>
-    <li><img src="/work/leni-26.jpg"></li>
-    <li><img src="/work/leni-27.jpg"></li>
-    <li><img src="/work/leni-28.jpg"></li>
-    <li><img src="/work/leni-29.jpg"></li>
-    <li><img src="/work/leni-30.jpg"></li>
-    <li><img src="/work/leni-31.jpg"></li>
-    <li><img src="/work/leni-32.jpg"></li>
+    <li><img src="/work/leni-01.jpg" alt=""></li>
+    <li><img src="/work/leni-02.jpg" alt=""></li>
+    <li><img src="/work/leni-03.jpg" alt=""></li>
+    <li><img src="/work/leni-04.jpg" alt=""></li>
+    <li><img src="/work/leni-06.jpg" alt=""></li>
+    <li><img src="/work/leni-07.jpg" alt=""></li>
+    <li><img src="/work/leni-08.jpg" alt=""></li>
+    <li><img src="/work/leni-09.jpg" alt=""></li>
+    <li><img src="/work/leni-10.jpg" alt=""></li>
+    <li><img src="/work/leni-11.jpg" alt=""></li>
+    <li><img src="/work/leni-12.jpg" alt=""></li>
+    <li><img src="/work/leni-13.jpg" alt=""></li>
+    <li><img src="/work/leni-14.jpg" alt=""></li>
+    <li><img src="/work/leni-15.jpg" alt=""></li>
+    <li><img src="/work/leni-16.jpg" alt=""></li>
+    <li><img src="/work/leni-17.jpg" alt=""></li>
+    <li><img src="/work/leni-18.jpg" alt=""></li>
+    <li><img src="/work/leni-19.jpg" alt=""></li>
+    <li><img src="/work/leni-20.jpg" alt=""></li>
+    <li><img src="/work/leni-21.jpg" alt=""></li>
+    <li><img src="/work/leni-22.png" alt=""></li>
+    <li><img src="/work/leni-23.jpg" alt=""></li>
+    <li><img src="/work/leni-24.jpg" alt=""></li>
+    <li><img src="/work/leni-25.jpg" alt=""></li>
+    <li><img src="/work/leni-26.jpg" alt=""></li>
+    <li><img src="/work/leni-27.jpg" alt=""></li>
+    <li><img src="/work/leni-28.jpg" alt=""></li>
+    <li><img src="/work/leni-29.jpg" alt=""></li>
+    <li><img src="/work/leni-30.jpg" alt=""></li>
+    <li><img src="/work/leni-31.jpg" alt=""></li>
+    <li><img src="/work/leni-32.jpg" alt=""></li>
 </ul>

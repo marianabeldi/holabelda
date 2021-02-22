@@ -109,6 +109,7 @@ ul.music-list {
     margin-bottom: 30px;
     li a {
       display: inline-block;
+      font-size: 1.2rem;
       margin-bottom: 10px;
       transition: transform .2s ease-in;
       &:hover {
@@ -143,6 +144,7 @@ ul.ul-list {
     column-count: 1;
     column-gap: 5px;
     margin-top: var(--navH);
+    video { max-width: 100%; }
 }
 .single {
   display: flex;
