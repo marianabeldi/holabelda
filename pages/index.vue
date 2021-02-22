@@ -90,9 +90,12 @@
     max-height: 260px;
 }
 
+.articles.cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .articles.cards h2, .blog.cards h2 {
     background-color: var(--yellow);
-    grid-area: 1 / 1 /  2 / 3;
+    grid-area: 1 / 1 /  2 / 4;
     padding: .2rem .3rem .2rem .6rem;
 }
 
