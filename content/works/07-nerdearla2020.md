@@ -20,7 +20,7 @@ category:
         <p class="content-date">October, 2020</p>
         <h1>Nerdearla 2020</h1>
         <p>During the pandemic, at <a target="_blank" rel="noreferrer" href="https://leniolabs.com/">Leniolabs</a>, we decided to build a Virtual Stand to participate in <a target="_blank" rel="noreferrer" href="http://nerdearla.com/">Nerdearla</a> 2020, an event about science and technology.</p>
-        <p>We developed an interactive house to navigate different sections of our company. The site was built with Nuxt, SVG and CSS animations.</p>
+        <p>We developed an interactive house to navigate different sections of our company. It includes an automatic dark mode after 6pm in which different animations will appear. The site was built with Nuxt, SVG, and CSS animations.</p>
         <h2>More info:</h2>
         <ul class="music-list">
             <li><a target="_blank" rel="noreferrer" href="https://nerdearla.leniolabs.com/" class="heart">Nerdearla Virtual Stand</a></li>
