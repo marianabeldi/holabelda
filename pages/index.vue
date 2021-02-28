@@ -201,6 +201,8 @@
             font-size: 1.8rem;
             padding: 0 .8rem;
         }
+        img { min-height: 180px; }
+
     }
 }
 .img-shape-house {
