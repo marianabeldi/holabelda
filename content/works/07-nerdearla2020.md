@@ -7,7 +7,7 @@ createdAt: 2020-10-05
 category: 
 - illustration
 - svg
-- vue.js
+- nuxt
 ---
 
 <ul class="tags">

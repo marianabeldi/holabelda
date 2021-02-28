@@ -1,10 +1,11 @@
 <template>
   <div>
     <header>
-      <h1>#{{ $route.params.category }}</h1>
+      <h1>Results for: <span class="result">#{{ $route.params.category }}</span></h1>
     </header>
       <div class="pattern">
         <div v-if="posts" class="blog cards wrapper">
+          <h2>#{{ $route.params.category }}</h2>
           <CardBlog v-for="post in posts" :key="post.slug" :type="$route.query.type" :post="post"/>
         </div>
       </div>
@@ -59,5 +60,8 @@ export default {
   margin: 0 auto;
   max-width: 80ch;
   padding: 2rem;
+}
+.result {
+  color: var(--lightblue);
 }
 </style>

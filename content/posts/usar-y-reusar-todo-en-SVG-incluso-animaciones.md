@@ -7,6 +7,8 @@ createdAt: 2020-03-10
 image: /blog/blog-use-and-reuse-01.png
 category: 
 - svg 
+- css
+- tutorial
 - espanol
 ---
 

@@ -170,6 +170,7 @@
 .card-category {
   color: var(--darkblue);
   display: inline-block;
+  margin: .5rem 0;
   span {
     background-color: var(--yellow);
     border: 2px solid var(--yellow);

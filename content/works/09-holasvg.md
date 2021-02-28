@@ -7,13 +7,13 @@ date: 02 Aug 2020
 createdAt: 2020-08-02
 category: 
 - svg
-- vue.js
+- nuxt
 - icons
 ---
 
 <ul class="tags">
     <li>SVG</li>
-    <li>vue.js</li>
+    <li>nuxt</li>
     <li>icons</li>
 </ul>
 <ul class="single">

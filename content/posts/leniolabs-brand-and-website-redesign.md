@@ -6,6 +6,7 @@ date: 26 October 2018
 createdAt: 2018-10-26
 image: /blog/blog-leniolabs-redesign.png
 category: 
+- branding
 - case-study
 - english
 ---

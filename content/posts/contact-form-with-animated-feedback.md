@@ -7,6 +7,9 @@ createdAt: 2019-12-06
 image: /blog/blog-contact-form.jpg
 category: 
 - svg 
+- js
+- ui
+- tutorial
 - english
 ---
 

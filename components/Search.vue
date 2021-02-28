@@ -55,9 +55,16 @@ export default {
     box-shadow: 0 0 0 1px var(--yellow);
     font-size: 1.2rem;
     list-style-type: none;
-    padding: 1rem;
+    padding: 0 1rem;
     position: absolute;
     width: 100%;
+    z-index: 1;
+    li { 
+      border-bottom: 1px dashed var(--lightgrey);
+      margin: 1rem 0; 
+      padding-bottom: .5rem;
+      &:last-child { border: 0; padding-bottom: 0;}
+    }
     a:hover {
       color: var(--darkblue);
     }

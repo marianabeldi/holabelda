@@ -13,8 +13,8 @@ category:
 
 <ul class="tags">
     <li>SVG</li>
-    <li>vue.js</li>
-    <li>icons</li>
+    <li>art</li>
+    <li>ui</li>
 </ul>
 <ul class="gallery masonry">
     <div class="content">

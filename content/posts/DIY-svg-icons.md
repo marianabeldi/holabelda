@@ -7,6 +7,7 @@ createdAt: 2020-09-29
 image: /blog/blog-DIY-svg-01.png
 category: 
 - svg
+- tutorial
 - english
 ---
 

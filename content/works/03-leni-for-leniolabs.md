@@ -6,12 +6,13 @@ image: /work/leni-19.jpg
 createdAt: 2019-08-20
 category: 
 - illustration
-- ink
+- character design
+- branding
 ---
 
 <ul class="tags">
-    <li>Art direction</li>
     <li>Illustration</li>
+    <li>Character Design</li>
     <li>Branding</li>
 </ul>
 <ul class="gallery masonry">

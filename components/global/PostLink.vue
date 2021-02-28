@@ -41,5 +41,9 @@ export default {
   justify-content: space-between;
   margin: 2rem auto;
   a:hover { color: var(--red); }
+  div {
+    margin: 1rem;
+    + div { text-align: right; }
+  }
 }
 </style>

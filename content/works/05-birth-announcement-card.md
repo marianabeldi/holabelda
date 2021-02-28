@@ -7,12 +7,12 @@ date: 02 Jun 2019
 createdAt: 2019-06-02
 category: 
 - illustration
-- branding
-- art direction
+- graphic design
+- print design
 ---
 
 <ul class="tags">
-    <li>digital illustration</li>
+    <li>illustration</li>
     <li>graphic design</li>
     <li>print design</li>
 </ul>

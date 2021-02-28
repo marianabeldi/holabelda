@@ -70,6 +70,7 @@ export default {
     width: 100%;
 }
 .inner-post-head {
+  margin-bottom: 2rem;
   h1 { margin: 1rem 0 0; }
   .inner-post-subtitle {
     color: var(--darkblue);
@@ -134,10 +135,16 @@ blockquote {
 }
 code {
   background-color: var(--lightgrey);
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 video { max-width: 100%; }
 .vimeo {
   max-height: 80vh;
+}
+@media screen and (max-width: 56.25em) {
+  blockquote {
+    font-size: 1.3rem;
+    margin: 0;
+  }
 }
 </style>

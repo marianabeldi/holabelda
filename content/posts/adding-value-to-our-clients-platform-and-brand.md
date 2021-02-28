@@ -6,6 +6,9 @@ date: 6 May 2020
 createdAt: 2020-05-06
 image: /blog/blog-adding-value-02.jpg
 category: 
+- branding
+- svg
+- css
 - case-study
 - english
 ---

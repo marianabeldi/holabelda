@@ -7,6 +7,7 @@ createdAt: 2019-12-06
 image: /blog/blog-going-beyond.jpg
 category: 
 - svg 
+- tutorial
 - espanol
 ---
 

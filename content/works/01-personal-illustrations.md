@@ -6,8 +6,8 @@ image: /work/ilus-01.jpg
 createdAt: 2000-05-06
 category: 
 - illustration
-- branding
-- art direction
+- art
+- pattern
 ---
 
 <ul class="tags">
