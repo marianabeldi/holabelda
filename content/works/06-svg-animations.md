@@ -3,7 +3,7 @@ title: Animated Illustrations
 subtitle: SVG animations
 excerpt: Animated Illustrations
 image: /work/th-svgs.jpg
-date: 02 Jun 2020
+createdAt: 2020-06-02
 category: 
 - illustration
 - SVG

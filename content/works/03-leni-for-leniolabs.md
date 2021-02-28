@@ -3,7 +3,7 @@ title: Leni for Leniolabs_
 subtitle: Character Design & Merchandising
 excerpt: Leni for Leniolabs_
 image: /work/leni-19.jpg
-date: 20 Aug 2019
+createdAt: 2019-08-20
 category: 
 - illustration
 - ink

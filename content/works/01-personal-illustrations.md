@@ -3,7 +3,7 @@ title: Personal Illustrations
 subtitle: Illustration & Art
 excerpt: Personal Illustrations
 image: /work/ilus-01.jpg
-date: 16 Apr 1984
+createdAt: 2000-05-06
 category: 
 - illustration
 - branding

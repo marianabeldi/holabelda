@@ -2,8 +2,8 @@
 title: Nerdearla 2020
 subtitle: Virtual stand
 excerpt: Nerdearla 2020
-image: /work/nerdearla-01.png
-date: 05 Oct 2020
+image: /work/nerdearla.png
+createdAt: 2020-10-05
 category: 
 - illustration
 - svg

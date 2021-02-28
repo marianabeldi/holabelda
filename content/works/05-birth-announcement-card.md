@@ -4,6 +4,7 @@ subtitle: Illustration & Design
 excerpt: Birth announcement card
 image: /work/lenna-01.jpg
 date: 02 Jun 2019
+createdAt: 2019-06-02
 category: 
 - illustration
 - branding

@@ -18,6 +18,7 @@
     --yellow: #fee7a3;
     --navH: 50px;
     --lightblue: #9a9ab9;
+    --lightgrey: #f2f2f2;
 }
 
 * { box-sizing: border-box; }
@@ -44,12 +45,7 @@ h3 {
   font-size: 1.5rem;
 }
 p {
-  line-height: 1.4;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0; 
+  line-height: 1.5;
 }
 img {
   max-width: 100%;

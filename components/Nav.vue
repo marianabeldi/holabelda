@@ -22,6 +22,9 @@ nav {
         display: flex;
         justify-content: center;
         height: var(--navH);
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
     }
     li {
         margin: 0 1.5em;

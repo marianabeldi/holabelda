@@ -198,11 +198,40 @@
         text-align: center;
         .card-title {
             color: var(--darkblue);
-            font-size: 2rem;
-            padding: 0 1rem 1rem;
+            font-size: 1.8rem;
+            padding: 0 .8rem;
         }
     }
 }
+.img-shape-house {
+    .st0{fill:#fff;stroke:#2e3897;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    .st1{fill:#f1848a}
+    .st2{fill:none;stroke:#2e3897;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    .st3,.st4{fill:#f1848a}
+    .st3{stroke:#2e3897;stroke-miterlimit:10}
+    .st4{enable-background:new}
+    .st5{fill:#fff9e1}
+    .st6,.st7{fill:none;stroke:#2e3897;stroke-miterlimit:10}
+    .st7{fill:#b3d6e9;stroke-linecap:round;stroke-linejoin:round}
+    .st8{fill:#fff}
+    .st9{fill:#d4efe9;stroke-linecap:round;stroke-linejoin:round}
+    .st10,.st11,.st12,.st9{stroke:#2e3897;stroke-miterlimit:10}
+    .st10{stroke-linecap:round;stroke-linejoin:round;fill:#f1848a}
+    .st11,.st12{fill:#e8444e}
+    .st12{fill:#fff}
+}
+.img-shape-tree {
+    .st0{fill:#d4efe9;stroke:#2e3897;stroke-width:.5;stroke-linecap:round;stroke-linejoin:round;}
+}
+.img-shape-stop {   
+    .st1{fill:#fff;stroke:#2e3897;stroke-width:.5;stroke-linecap:round;stroke-linejoin:round;}
+    .st4{fill:#f1848a}
+    .st5{fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .st5,.st8,.st9{stroke:#2e3897;stroke-width:.5;}
+    .st8{stroke-linecap:round;stroke-linejoin:round;fill:#d4efe9}
+    .st9{fill:none}   
+}
+
 @media screen and (min-width: 37.5em) {
     .cards {
         display: flex;
@@ -213,6 +242,25 @@
     }
     .cards h2 {
         writing-mode: vertical-lr;
+    }
+    .img-shape-stop {
+        float: left;
+        padding: .5em 1em .5em 0;
+        shape-outside: polygon(64px 0px, 98px 34px, 100px 78px, 115px 105px, 0px 105px);
+        margin-left: -1.5em;
+    }
+    .img-shape-house {
+        float: left;
+        padding: .5em 1em .5em 0;
+        shape-outside: polygon(44px 0px, 88px 58px, 145px 58px, 145px 145px, 8px 145px);
+        width: 132px;
+        margin-left: -1.5em;
+    }
+    .img-shape-tree {
+        float: right;
+        padding: 1.5em 0 0 1em;
+        shape-outside: polygon(45px 0px, 18px 55px, 12px 86px, 26px 120px, 60px 120px);
+        margin-right: -2em;
     }
 }
 @media screen and (min-width: 56.25em) {
@@ -232,6 +280,11 @@
     }
     .articles.cards h2, .blog.cards h2 {
         writing-mode: initial;
+    }
+    .blog .card img { height: 180px; }
+    .blog .card .card-title { min-height: 110px;}
+    .inner-post-body figure.full-w {
+        margin: auto -6rem;
     }
 }
 

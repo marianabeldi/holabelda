@@ -3,7 +3,7 @@ title: Lenimatic
 subtitle: Leni Builder
 excerpt: Lenimatic
 image: /work/lenimatic-01.png
-date: 02 Sep 2020
+createdAt: 2020-09-02
 category: 
 - illustration
 - svg

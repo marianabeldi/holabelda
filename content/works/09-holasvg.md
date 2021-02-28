@@ -4,6 +4,7 @@ subtitle: SVG Playground
 excerpt: Hola SVG
 image: /work/hola-01.png
 date: 02 Aug 2020
+createdAt: 2020-08-02
 category: 
 - svg
 - vue.js

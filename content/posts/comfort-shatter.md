@@ -2,8 +2,9 @@
 title: Comfort Shatter
 excerpt: App prototype
 subtitle: App prototype
-date: March 2018
-image: /blog/blog-comfort-shatter-01.jpg
+date: 5 October 2018
+createdAt: 2018-10-05T10:58:51.640Z
+image: /blog/blog-comfort-shatter.jpg
 category: 
 - case-study 
 - english

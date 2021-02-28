@@ -2,8 +2,9 @@
 title: Leniolabs brand & web redesign
 excerpt: Leniolabs brand & web redesign
 subtitle: The internal process of creating and developing our own site.
-date: 10 Dec 2019
-image: /blog/blog-leniolabs-redesign-01.jpg
+date: 26 October 2018
+createdAt: 2018-10-26
+image: /blog/blog-leniolabs-redesign.png
 category: 
 - case-study
 - english

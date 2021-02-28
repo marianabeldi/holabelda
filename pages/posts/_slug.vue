@@ -63,8 +63,13 @@ export default {
     color: var(--red);
   }
 }
+.inner-post-head + img {
+    height: 480px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
 .inner-post-head {
-  text-align: center;
   h1 { margin: 1rem 0 0; }
   .inner-post-subtitle {
     color: var(--darkblue);
@@ -81,19 +86,19 @@ export default {
   max-width: 75ch;
   padding: 2rem;
   h2, h3 {
+    // color: var(--lightblue);
     font-weight: normal;
-    margin: 2.5rem 0 1rem;
-    opacity: .4;
+    line-height: 1.3;
   }
-  h2 { font-size: 2.4rem; }
-  h3 { font-size: 1.7rem; }
+  h2 { font-size: 2.4rem; margin: 4rem 0 2rem; }
+  h3 { font-size: 1.7rem;  margin: 2.5rem 0 1rem; }
   figure {
     margin: 2rem 0;
+    text-align: center;
   }
   figcaption {
-    color: var(--darkblue);
+    color: var(--lightblue);
     font-size: 1rem;
-    opacity: .4;
     text-align: center;
   }
   .flex-imgs {
@@ -105,12 +110,31 @@ export default {
       flex: 1 1 100%;
       margin-top: 5px;
     }
+    &.two img {
+      max-width: 400px;
+      width: 100%;
+    }
   }
 }
+.separator {
+    letter-spacing: 1em;
+    text-align: center;
+}
 blockquote {
-  font-size: 1.5rem;
+  border-left: 4px solid var(--lightgrey);
+  font-size: 1.4rem;
   font-style: italic;
   line-height: 1.8;
+  margin: 3rem 1rem;
+  padding: 0 2rem;
+}
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+code {
+  background-color: var(--lightgrey);
+  font-size: 1.2em;
 }
 .vimeo {
   max-height: 80vh;

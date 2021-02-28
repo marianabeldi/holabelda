@@ -41,6 +41,7 @@ export default {
     color: var(--darkblue);
     font-family: 'Aleo', serif;
     font-size: 1.2rem;
+    margin: 0;
     min-height: 2rem;
     padding: 1rem;
     width: 100%;
@@ -53,6 +54,7 @@ export default {
     background-color: white;
     box-shadow: 0 0 0 1px var(--yellow);
     font-size: 1.2rem;
+    list-style-type: none;
     padding: 1rem;
     position: absolute;
     width: 100%;
