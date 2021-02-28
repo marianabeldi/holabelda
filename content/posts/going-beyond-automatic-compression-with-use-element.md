@@ -149,7 +149,7 @@ This is the complete code:
 Here are the three examples side by side to compare legibility and amount of code, we went from  **241**  to  **12**  neat lines:
 
 <figure>
-    <img src="/blog/blog-going-beyond-02.png" alt=""/>
+    <img src="/blog/blog-going-beyond-03.jpg" alt=""/>
     <figcaption>From left to right: Code direct from Illustrator, code after SVGOMG, code after optimization.</figcaption>
 </figure>
 

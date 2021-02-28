@@ -144,7 +144,7 @@ El código completo está en este Codepen:
 Acá están los tres ejemplos lado a lado para comparar legibilidad y cantidad de código, fuimos de 241 a 12 líneas:
 
 <figure>
-    <img src="/blog/blog-going-beyond-02.png" alt=""/>
+    <img src="/blog/blog-going-beyond-03.jpg" alt=""/>
     <figcaption>From left to right: Code direct from Illustrator, code after SVGOMG, code after optimization.</figcaption>
 </figure>
 
