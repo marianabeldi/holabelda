@@ -10,13 +10,13 @@ category:
 - espanol
 ---
 
-> Read the english version [here]().
+> Read the english version [here](/posts/use-and-reuse-everything-in-svg-even-animations).
+
+<div class="separator" aria-hidden="true">***</div>
 
 Si estás familiarizado con SVG y animaciones CSS, o empezaste a trabajar con ellas a menudo, acá hay algunas ideas a tener en cuenta antes de comenzar a trabajar. Este artículo trata sobre cómo escribir y optimizar código con **el elemento `<use>`, las variables CSS y las animaciones CSS.**
 
-<figure>
-    <img src="/blog/blog-use-and-reuse-01.png" alt="cubes exploding">
-</figure>
+<video autoplay="" controls="" loop="" src="https://css-tricks.com/wp-content/uploads/2020/01/cubes.mp4" name="fitvid0"></video>
 
 ## Parte 1: El elemento SVG <use>
 Si sos un desarrollador al que le gusta mantener su código [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) o sos de usar las variables Sass / CSS, es muy probable que te guste esta etiqueta.
@@ -72,7 +72,7 @@ Ahora hay que ubicar cada clon del cubo pequeño, recordando que el último elem
 
 > `xlink:href `está obsoleto desde SVG2, pero es mejor usarlo por cuestiones de compatibilidad. En algunos navegadores modernos se puede simplemente usar `href` pero al momento de escribir esta nota lo testié en Safari y no está funcionando ahí. Si usás `xlink:href` asegurate de incluir este namespace en tu SVG tag: `xmlns:xlink="http://www.w3.org/1999/xlink"` (no lo necesitas si decidís usar `href`).
 
----
+<div class="separator" aria-hidden="true">***</div>
 
 ## Parte 2: Usando variables CSS para aplicar diferentes estilos al gráfico reutilizado
 
@@ -121,7 +121,7 @@ Creemos una paleta para el cubo azul y otra para el cubo rosa:
 
 De esta manera podemos crear la cantidad de cubos que queramos y cambiar todos los colores desde un solo lugar.
 
----
+<div class="separator" aria-hidden="true">***</div>
 
 ## Parte 3: Reusando animaciones
 La idea de esta parte es quebrar el cubo cuando pasamos el mouse sobre él — algo así como una vista explotada, algunas piezas se alejarán del centro cuando pasamos el cursor sobre los cubos.
@@ -197,4 +197,4 @@ Tardé mucho en darme cuenta que podía reutilizar un simple cubo pequeño para 
 
 Aprendí que es mejor tomarse un tiempo para analizar qué se puede hacer con SVG antes de embarcarse en la tarea. En este caso hubo que modificar el diseño original levemente, pero esa modificación permitió hacer un código más mantenible y escalable. Puede tomar más tiempo al principio pero a largo plazo ganaremos mucho más.
 
-> Este artículo fue publicado originalmente en CSS-Tricks editado por Chris Coyier y Geoff Graham
+> Este artículo fue publicado originalmente en  [CSS-Tricks](https://css-tricks.com/use-and-reuse-everything-in-svg-even-animations/) editado por [Chris Coyier](https://chriscoyier.net/) y [Geoff Graham](https://geoffgraham.me/)

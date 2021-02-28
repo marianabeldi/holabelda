@@ -242,3 +242,5 @@ We covered a lot here in a short amount of time! While we used examples to demon
 ### How many icons can be created by combining these basic shapes?
 
 [I'm working on my list on holasvg.com/icons](https://holasvg.com/icons), I'll be constantly uploading more icons and features here, and now you know how to easily modified them just by changing a few numbers. **Go ahead and make them yours!**
+
+> This article was first published on [CSS-Tricks](https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/) with edits from [Chris Coyier](https://chriscoyier.net/) and [Geoff Graham](https://geoffgraham.me/)

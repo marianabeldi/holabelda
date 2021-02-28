@@ -25,6 +25,7 @@ Comfort Shatter is an app that brings users challenges to break out of their com
 Starting with some sketches. get the ideas out of the head and down on paper.
 Picture of a book with handmade sketches
 First draft with user flow.
+
 <figure>
     <img src="/blog/blog-comfort-shatter-02.jpg" alt=""/>
     <figcaption>First draft with user flow.</figcaption>
@@ -34,6 +35,7 @@ First draft with user flow.
 Looking for some vibrant colors for a modern palette, friendly monsters to represent the challenges, rounded shapes, and brush fonts.
 moon board of inspiration
 Vibrant colors, friendly monsters.
+
 <img src="/blog/blog-comfort-shatter-03.jpg" alt=""/>
 
 ## Designing the app

@@ -10,11 +10,13 @@ category:
 - english
 ---
 
+> Leer versión en español [acá](/posts/usar-y-reusar-todo-en-SVG-incluso-animaciones).
+
+<div class="separator" aria-hidden="true">***</div>
+
 If you are familiar with SVG and CSS animations and starting to work with them often, here are some ideas you might want to keep in mind before jumping into the next job. This article will be about learning how to build and optimize your code with **the `<use>` element, CSS Variables and CSS animations**.
 
-<figure>
-    <img src="/blog/blog-use-and-reuse-01.png" alt="cubes exploding">
-</figure>
+<video autoplay="" controls="" loop="" src="https://css-tricks.com/wp-content/uploads/2020/01/cubes.mp4" name="fitvid0"></video>
 
 ## Part 1: The SVG <use> element
 If you are a developer that likes to keep your code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) or a big fan of Sass/CSS variables, there is a good chance that you will like this tag.
@@ -61,7 +63,6 @@ Then we can link the unit as many times as we want using its ID and change the `
 <!-- ... -->
 ```
 
-
 <iframe width="100%" height="300" scrolling="no" title="2. Big cube reusing content SVG &lt;use&gt;" src="https://codepen.io/marianab/embed/wvvZXqG?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/marianab/pen/wvvZXqG'>2. Big cube reusing content SVG &lt;use&gt;</a> by Mariana
   (<a href='https://codepen.io/marianab'>@marianab</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -73,7 +74,7 @@ Now we have to position every cube remembering that the last element will appear
 > *`xlink:href` is deprecated since SVG2, but it is better to use it for compatibility purposes. In modern browsers, you can just use `href` but I tested it on Safari and at the time of writing is not working there. If you use `xlink:href` make sure you include this namespace in your SVG tag: `xmlns:xlink="http://www.w3.org/1999/xlink"` (you won't need it if you decide to use `href`).*
 
 
----
+<div class="separator" aria-hidden="true">***</div>
 
 ## Part 2: Using CSS variables to apply different styles to your reused graphic
 I chose a main color for the cube, which is a lighter and a darker shade for the sides and a stroke color. But what if we want to make a second cube a different color?
@@ -122,8 +123,7 @@ Let's create a palette for the blue cube and another one for the pink cube:
 
 This way, we can add as many cubes as we want and change all colors from one place.
 
-
----
+<div class="separator" aria-hidden="true">***</div>
 
 ## Part 3: Reusing animations
 The idea for this instance is to break the cubes on hover - something like an exploded view so some pieces will move away from the center when we place the cursor over the cubes.
@@ -207,3 +207,5 @@ We can apply each class to different elements in the SVG. In the first blue cube
 It wasn't until later that I realized I could reuse a single unit to build them all. I worked on the small cube to make it isometric enough so it could align easily with the other ones next to it. At this point, my unit was a `<path>` but I decided to replace it with SVG shapes to reduce the code and get cleaner markup.
 
 I learned that it is better to take some time to analyze what can be done with SVG before drawing every single shape and dealing with a huge amount of code. It might take more time in the beginning but will save you a lot of time and effort in the long run.
+
+> This article was first published on [CSS-Tricks](https://css-tricks.com/use-and-reuse-everything-in-svg-even-animations/) with edits from [Chris Coyier](https://chriscoyier.net/) and [Geoff Graham](https://geoffgraham.me/)

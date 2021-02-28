@@ -136,6 +136,7 @@ code {
   background-color: var(--lightgrey);
   font-size: 1.2em;
 }
+video { max-width: 100%; }
 .vimeo {
   max-height: 80vh;
 }

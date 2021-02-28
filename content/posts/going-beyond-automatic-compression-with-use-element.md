@@ -4,19 +4,17 @@ excerpt: Reduce your file size and improve your code.
 subtitle: Reduce your file size and improve your code.
 date: 6 December 2019
 createdAt: 2019-12-06
-image: /blog/blog-going-beyond.jpg
+image: /blog/blog-going-beyond-01.png
 category: 
 - svg 
 - english
 ---
 
-If you draw your own SVG files or if you download them from the internet, tools like these online SVG editors can compress your graphics in only a few seconds and reduce your file size a lot:  
+> Leer versión en español [acá](/posts/svg-mas-alla-de-la-compresion-automatica-con-el-elemento-use).
 
-- <a target="_blank" href="https://petercollingridge.appspot.com/svg-editor">SVG Editor</a> 
-- <a target="_blank" href="https://jakearchibald.github.io/svgomg/">SVGOMG</a>  
+<div class="separator" aria-hidden="true">***</div>
 
-
-But if you need to use your SVG inline to animate or interact with the code, there’s still a lot you can do about  _code legibility_.
+If you draw your own SVG files or if you download them from the internet, tools like this [SVG-Editor](https://petercollingridge.appspot.com/svg-editor) or [SVGOMG](https://jakearchibald.github.io/svgomg/) are your friends. Compressing the files with those tools takes only a few seconds and reduces your file size a lot. But if you need to use your SVG inline to animate or interact with the code, there’s still a lot you can do about *code legibility*.
 
 Reusing content with SVG’s  `<use>`  is not always an option, but when it is, you won’t regret taking a few extra minutes to put it in practice.
 
@@ -24,8 +22,9 @@ In this article, I’ll show an example where I was able to take a lot of advant
 
 This is the first design that I needed to work with. It was originally created in Illustrator:
 
-<figure class="img-flood">
-    {% asset blog-going-beyond-01 alt="org chart" %}
+<figure>
+    <img src="/blog/blog-going-beyond-01.png" alt=""/>
+    <figcaption>First draft with user flow.</figcaption>
 </figure>
 
 Take a look at the following code, this is the original file exported directly from the software, weighs  **2.05kb:**
@@ -73,15 +72,15 @@ We have one repeated element, which is the astronaut inside the circle. That’s
 
 1.  Move the  `<style>`  content to the CSS file (assuming you can use your SVG inline and that you have a stylesheet linked in your document).
 2.  Rename the IDs with something that makes sense to you.
-3.  Round those complicated numbers, like  `stroke-width="1.489"`  to  `stroke-width="1.5"`. This is something that could happen if you resize your vectors in Illustrator with the option of scaling borders checked.
-4.  Remove the  `stroke-miterlimit="10"`  as we don’t need it since our  `stroke-linejoin`  is round.
-5.  This code will be our astronaut template. We need to wrap everything in a group, add an ID to that group and place it inside a  `<defs>`  tag. Notice that we already have a  `<defs>`  element with a circle inside it. We can remove that one as it will be part of a bigger  `<defs>`  tag.
+3.  Round those complicated numbers, like `stroke-width="1.489"` to `stroke-width="1.5"`. This is something that could happen if you resize your vectors in Illustrator with the option of scaling borders checked.
+4.  Remove the `stroke-miterlimit="10"` as we don’t need it since our `stroke-linejoin` is round.
+5.  This code will be our astronaut template. We need to wrap everything in a group, add an ID to that group and place it inside a  `<defs>`  tag. Notice that we already have a `<defs>` element with a circle inside it. We can remove that one as it will be part of a bigger `<defs>` tag.
 
 Notice that the first two circles are filled shapes with different radius and color. We can keep the smaller one and add a stroke big enough to achieve the same effect — again, something that we could avoid using a circle with border in Illustrator in the first place.
 
 Another important thing is that our current viewBox is too small for what we want to build. Let’s make it bigger and add some negative space on the x-axis so we can start cloning our astronaut from the middle.
 
-> To learn more about viewBox, check out  [this beautiful guide](https://wattenberger.com/guide/scaling-svg)  to scaling SVG by Amelia Wattenberger.
+> To learn more about viewBox, check out [this beautiful guide](https://wattenberger.com/guide/scaling-svg) to scaling SVG by Amelia Wattenberger.
 
 We will end with something like this:
 
@@ -96,7 +95,7 @@ We will end with something like this:
 </svg>
 ```
 
-What goes inside the  `<defs>`  won’t render anywhere. To start cloning our astronaut, we need to link its ID inside a  `<use>`  element like this:
+What goes inside the `<defs>` won’t render anywhere. To start cloning our astronaut, we need to link its ID inside a  `<use>` element like this:
 
 ```html
 <use xlink:href="#astronaut"/>
@@ -134,12 +133,12 @@ If we declare any value in the attributes we defined in the  `<defs>`  then it w
 
 With this code ready, we’ll be able to scale the graphic to something like this much more easily:
 
-<figure class="img-flood">
-    {% asset blog-going-beyond-02 alt="SVG Org Chart" %}
-    <figcaption>SVG Org Chart</figcaption>
+<figure>
+    <img src="/blog/blog-going-beyond-02.png" alt=""/>
+    <figcaption>SVG Org Chart.</figcaption>
 </figure>
 
-### This is the complete code:
+This is the complete code:
 
 <iframe width="100%" height="300" scrolling="no" title="SVG Org Chart - reusing content " src="https://codepen.io/marianab/embed/abbrgag?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/marianab/pen/abbrgag'>SVG Org Chart - reusing content </a> by Mariana
@@ -149,6 +148,8 @@ With this code ready, we’ll be able to scale the graphic to something like thi
 Here are the three examples side by side to compare legibility and amount of code, we went from  **241**  to  **12**  neat lines:
 
 <figure>
-    {% asset blog-going-beyond-03 alt="optimizatino example" %}
+    <img src="/blog/blog-going-beyond-02.png" alt=""/>
     <figcaption>From left to right: Code direct from Illustrator, code after SVGOMG, code after optimization.</figcaption>
 </figure>
+
+> This article was first published on [CSS-Tricks](https://css-tricks.com/going-beyond-automatic-svg-compression-with-the-use-element/) with edits from [Chris Coyier](https://chriscoyier.net/) and [Geoff Graham](https://geoffgraham.me/)

@@ -14,28 +14,22 @@ Animations are the best way to bring life to our websites: they help us tell sto
 
 **In this article we’ll show an example of interactive animations**, the ones that appear right after the users take an action and can help them notice the results.
 
-A good case for using SVG interactions are form validations. We can **let the user know what is happening** at the time they interact with the inputs. This is an example that you can find at the bottom of this website.
+A good case for using SVG interactions are form validations. We can **let the user know what is happening** at the time they interact with the inputs.
 
 <figure>
-<img src="/images/blog-contact_form.gif" loading="lazy" alt="Contact animation">
-<figcaption>Interaction with contact form</figcaption>
+  <img src="/blog/blog-contact-form-01.gif" loading="lazy" alt="">
+  <figcaption>Interaction with contact form</figcaption>
 </figure>
 
-In this example we need both inputs to be filled. As soon as the user types any letter the green check icon will confirm that the input is valid. This is a small interaction that we can achieve by adding the <code class="inline-code">required</code> HTML5 attribute to our text <code class="inline-code">input</code> or <code class="inline-code">textarea</code> like this:
-
-<figure class="img-flood">
+In this example we need both inputs to be filled. As soon as the user types any letter the green check icon will confirm that the input is valid. This is a small interaction that we can achieve by adding the `required` HTML5 attribute to our text `input` or `textarea` like this:
 
 ```html
 <input type=”text” name=”name” id=”name” aria-required=”true” autocorrect=”off” required>
 ```
 
-</figure>
+**In CSS** we use the selector + pseudo-class: `input:valid` or `textarea:valid` with a SVG in the background that will show only when the element is valid:
 
-**In CSS** we use the selector + pseudo-class: <code class="inline-code">input:valid</code> or <code class="inline-code">textarea:valid</code> with a SVG in the background that will show only when the element is valid:
-
-<figure class="img-flood">
-
-```html
+```css
 input#name:valid, textarea:valid {
   background: white url(‘data:image/svg+xml,\
   <svg xmlns="http://www.w3.org/2000/svg" width=”26" height=”26">\
@@ -47,15 +41,11 @@ input#name:valid, textarea:valid {
 }
 ```
 
-</figure>
-
-When adding an inline SVG in CSS is important to use the namespace <code class="inline-code">xmlns=”http://www.w3.org/2000/svg"</code> or the image won’t be displayed.
+When adding an inline SVG in CSS is important to use the namespace `xmlns=”http://www.w3.org/2000/svg"` or the image won’t be displayed.
 
 The transition of the background will make the SVG move from its initial position to 98% to the right, as defined in the background shorthand in CSS.
 
 **In JavaScript** we can check those validations and add a class to the form (and the SVGs) when both fields are completed, and another class if at least one input is empty. Each class will bind to a CSS animation: one will make the form shake and the envelop fall out of the *Send* button; the other one will make the envelop fly directly to the mailbox and the red flag will be up.
-
-<figure class="img-flood">
 
 ```javascript
 document.getElementById(‘sendBtn’).addEventListener(‘click’, function (e) { 
@@ -71,8 +61,6 @@ document.getElementById(‘sendBtn’).addEventListener(‘click’, function (e
  }
 });
 ```
-
-</figure>
 
 ### Here is the complete code:
 

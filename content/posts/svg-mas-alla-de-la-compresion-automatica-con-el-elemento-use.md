@@ -11,27 +11,39 @@ category:
 ---
 
 
-Read the english version here.
+> Read the english version [here](/posts/going-beyond-automatic-compression-with-use-element).
 
-Si dibujas tus propios SVG o si los descargas de internet, herramientas como este editor de SVG o SVGOMG son tus amigos. Comprimir los archivos con estas herramientas puede tomar solo unos segundos y reducir su tamaño muchísimo. Pero si usás tu SVG inline para animar o interactuar con el código, hay mucho que podés hacer respecto a su legibilidad.
+<div class="separator" aria-hidden="true">***</div>
+
+Si dibujas tus propios SVG o si los descargas de internet, herramientas como este [editor de SVG](https://petercollingridge.appspot.com/svg-editor) o [SVGOMG](https://jakearchibald.github.io/svgomg/) son tus amigos. Comprimir los archivos con estas herramientas puede tomar solo unos segundos y reducir su tamaño muchísimo. Pero si usás tu SVG inline para animar o interactuar con el código, hay mucho que podés hacer respecto a su legibilidad.
 Reutilizar contenido con el elemento `<use>` de SVG no siempre es una opción, pero cuando lo es, vale la pena tomarse unos minutos extra para ponerlo en práctica.
 
 En este artículo, voy a mostrar un ejemplo del cual pude sacar mucha ventaja con este elemento — no solo para mantener un archivo liviano, sino también conseguir un código limpio, legible y fácil de mantener.
+
 Este es el primer diseño con el que tenía que trabajar. Fue originalmente creado en Illustrator:
 
-Org chart con imágenes de astronautas
+<figure>
+    <img src="/blog/blog-going-beyond-01.png" alt=""/>
+    <figcaption>First draft with user flow.</figcaption>
+</figure>
 
-En el siguiente Codepen se ve el código original directamente exportado desde el software, pesa 2.05kb:
+En el siguiente Codepen se ve el código original directamente exportado desde el software, pesa **2.05kb**:
 
-SVG exportado desde Illustrator
+<iframe width="100%" height="300" scrolling="no" title="SVG exported from Illustrator" src="https://codepen.io/marianab/embed/RwwmmLd?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/marianab/pen/RwwmmLd'>SVG exported from Illustrator</a> by Mariana
+  (<a href='https://codepen.io/marianab'>@marianab</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-No es un archivo pesado para nada. Sin embargo al abrirlo encontraremos un montón de tags vacíos, namespaces en desuso, espacio en blanco innecesario, comas e información extra aplicada por el software. Esto hace que el código sea difícil para trabajar, molesto para escanear y genera un scroll eterno con cientos de líneas en nuestro documento.
+No es un archivo pesado para nada. Sin embargo al abrirlo encontraremos un montón de tags vacíos, namespaces en desuso, espacio en blanco innecesario, comas e información extra [aplicada por el software](https://css-tricks.com/one-illustration-three-svg-outputs/). Esto hace que el código sea difícil para trabajar, molesto para escanear y genera un scroll eterno con cientos de líneas en nuestro documento.
+
 También notarás que este archivo está efectivamente usando elementos `<use>` y `<defs>`, pero no de la mejor manera posible. Y eso no es culpa del software! En el archivo original cada ilustración del astronauta tiene una máscara de recorte: un círculo invisible que actúa como ventana a través de la cual podemos ver a nuestro personaje. Sin ella, veríamos el traje del astronauta desbordando por fuera del círculo. Hay maneras de evitar esto en Illustrator, como por ejemplo cropeando esas partes con una opción de pathfinder. De esa forma ganaríamos algunos bytes y evitaríamos usar un círculo extra sólo para clipear información que no mostraremos en el gráfico. La compresión del archivo empieza en el software. Aun así, hay muchas cosas que podemos mejorar en el código en caso de que no podamos editar el archivo original.
-Comprimir el SVG en SVGOMG manteniendo las opciones por defecto, no costará ningún esfuerzo y obtendremos un archivo que pesa 1.46kb. Eso es una reducción de 30% comparado al peso original y se ve exactamente igual.
 
-Reusando contenido
+> Comprimir el SVG en SVGOMG manteniendo las opciones por defecto, no costará ningún esfuerzo y obtendremos un archivo que pesa **1.46kb**. Eso es una reducción de 30% comparado al peso original y se ve exactamente igual.
+
+## Reusando contenido
 
 Esto implicará revisar el SVG y hacer algunos ajustes. Sé que esta opción suele tomar más tiempo respecto a la anterior, pero no es tan difícil como parece.
+
 Tenemos un elemento que se repite, que es el astronauta dentro del círculo. Este será el que comprimiremos en SVGOMG, el resultado se verá así:
 
 ```html
@@ -51,15 +63,20 @@ Tenemos un elemento que se repite, que es el astronauta dentro del círculo. Est
 </svg>
 ```
 
-## Primeras recomendaciones:
-Mové el contenido de los estilos al archivo CSS (asumiendo que podés usar el SVG inline y que tenés una hoja de estilos linkeada al documento).
-Renombrá los IDs con algo que tenga sentido para vos.
-Redondeá esos números complicados, comostroke-width="1.489" a stroke-width="1.5". Esos números suelen aparecer cuando cambiás el tamaño del gráfico en Illustrator con la opción de “escalar borders” activa.
-Borrá los stroke-miterlimit="10" ya que no se necesitan cuandostroke-linejoin tiene el varlor round.
-Este código será nuestro template para los astronautas. Ahora hay que envolverlo en un grupo, agregar un ID a ese grupo y ubicarlo dentro del tag `<defs>`. Hay que tener en cuenta que ya tenemos un elemento `<defs>` con un círculo adentro. Movamos todo dentro del mismo tag para quedarnos con una sola etiqueta.
+### Primeras recomendaciones:
+
+1. Mové el contenido de los estilos al archivo CSS (asumiendo que podés usar el SVG inline y que tenés una hoja de estilos linkeada al documento).
+2. Renombrá los IDs con algo que tenga sentido para vos.
+3. Redondeá esos números complicados, como `stroke-width="1.489"` a `stroke-width="1.5"`. Esos números suelen aparecer cuando cambiás el tamaño del gráfico en Illustrator con la opción de `“escalar borders”` activa.
+4. Borrá los `stroke-miterlimit="10"` ya que no se necesitan cuando `stroke-linejoin `tiene el varlor `round`.
+5. Este código será nuestro template para los astronautas. Ahora hay que envolverlo en un grupo, agregar un ID a ese grupo y ubicarlo dentro del tag `<defs>`. Hay que tener en cuenta que ya tenemos un elemento `<defs>` con un círculo adentro. Movamos todo dentro del mismo tag para quedarnos con una sola etiqueta.
+
 Los primeros dos círculos que aparecen son dos figuras rellenas con diferente radio y color. Podemos mantener sólo el más pequeño y agregarle un borde lo suficientemente grande para conseguir el mismo efecto — de nuevo, algo que pudimos haber evitado desde el principio, usando un círculo con borde en Illustrator.
+
 Otra cosa importante es que nuestro viewBox actual es muy pequeño para lo que queremos construir. Podemos agrandarlo agregando espacio negativo en el eje x para poder empezar a clonar el astronauta desde el medio.
-Para aprender más acerca del viewBox, mirá esta hermosa guía sobre escalar SVG hecha por Amelia Wattenberger.
+
+> Para aprender más acerca del viewBox, mirá esta [hermosa guía](https://wattenberger.com/guide/scaling-svg) sobre escalar SVG hecha por Amelia Wattenberger.
+
 El resultado será algo así:
 
 ```html
@@ -79,7 +96,8 @@ Lo que va dentro de `<defs>` no se renderiza en ningún lado. Para empezar a clo
 <use xlink:href="#astronaut"/>
 ```
 
-xlink:href está obsoleto desde SVG2, pero es mejor usarlo por cuestiones de compatibilidad. En algunos navegadores modernos se puede simplemente usar href pero al momento de escribir esta nota lo testié en Safari y no está funcionando ahí. Si usásxlink:href asegurate de incluir este namespace en tu SVG tag: xmlns:xlink="http://www.w3.org/1999/xlink" (no lo necesitarás si decidís usar href).
+> `xlink:href `está obsoleto desde SVG2, pero es mejor usarlo por cuestiones de compatibilidad. En algunos navegadores modernos se puede simplemente usar `href` pero al momento de escribir esta nota lo testié en Safari y no está funcionando ahí. Si usás `xlink:href` asegurate de incluir este namespace en tu SVG tag: `xmlns:xlink="http://www.w3.org/1999/xlink"` (no lo necesitarás si decidís usar `href`).
+
 Ahora podemos agregar el texto correspondiente a este primer clon y alinearlo con el atributo transform. Es recomendable ubicar ambos elementos dentro de un mismo grupo, para que en futuras instancias podamos trasladar todo junto a la posición que corresponde:
 
 ```html
@@ -89,28 +107,44 @@ Ahora podemos agregar el texto correspondiente a este primer clon y alinearlo co
 </g>
 ```
 
-Las líneas conectoras son simples formas que puede ser dibujadas directamente con <path>. Los paths parecen complejos, pero para líneas rectas, no hay mucho de qué preocuparse. Voy a explicar el siguiente código:
+Las líneas conectoras son simples formas que puede ser dibujadas directamente con `<path>`. Los paths parecen complejos, pero para líneas rectas, no hay mucho de qué preocuparse. Voy a explicar el siguiente código:
 
 ```html
 <path class="line" d="M-4 200v-25h200"/>
 ```
 
-`d=""` significa data y ahí dentro escribiremos los comandos necesarios. M es el comando para mover la mano al lugar de la hoja donde empezaremos a dibujar (pero no dibuja nada). `-4 200` significa que ubicaremos el lápiz cuatro unidades a la izquierda y 200 unidades para abajo dentro de nuestro viewBox (siguiendo la orientación del sistema de coordenadas de SVG). `v` es el comando para empezar a dibujar una línea vertical que irá desde este punto `25` unidades arriba (negativo va para arriba). `h` es el comando para línea horizontal, así que dibujaremos una línea desde allí hasta `200` unidades a la derecha. Casi como el logo writer.
+`d=""` significa data y ahí dentro escribiremos los comandos necesarios. `M` es el comando para mover la mano al lugar de la hoja donde empezaremos a dibujar (pero no dibuja nada). `-4 200` significa que ubicaremos el lápiz cuatro unidades a la izquierda y 200 unidades para abajo dentro de nuestro viewBox (siguiendo la orientación del sistema de coordenadas de SVG). `v` es el comando para empezar a dibujar una línea vertical que irá desde este punto -25 unidades arriba (negativo va para arriba). `h` es el comando para línea horizontal, así que dibujaremos una línea desde allí hasta 200 unidades a la derecha. Casi como el logo writer.
 
 Separé todas las líneas en tres paths, pero podemos usar sólo una cambiando el valor de M después de una serie de comandos para mover la mano y seguir dibujando desde un nuevo punto dentro del sistema de coordenadas.
-Si ves el código del documento final, ahora el archivo pesa 779 bytes y tiene sólo 12 líneas de código legible y escalable:
 
-SVG optimizado con `<use>`
-Si declaramos algún valor en los atributos que definimos dentro del elemento `<defs>` no será posible cambiarlo dentro de sus clones debido a la naturaleza del elemento `<use>`. Por eso en el ejemplo de arriba, el relleno del círculo principal fue reemplazado por el valor currentColor para poder tener control de los colores de fondo de todas las instancias replicadas. currentColor heredará en CSS el valor del color del elemento (o cualquier elemento arriba de éste). En el SVG, estoy agregando una clase a algunas replicas del astronauta y agregando un valor de color a esas clases en CSS. De esta forma, podré cambiar el color en todas las instancias del elemento `<use>` con esa clase. Para entender más acerca del `<use>` y cómo estilear su contenido, este post de Sara Soueidan tiene todo lo que necesitas saber.
+Si ves el código del documento final, ahora el archivo pesa **779 bytes** y tiene sólo **12 líneas de código** legible y escalable:
+
+<iframe width="100%" height="300" scrolling="no" title="SVG with &lt;use&gt;" src="https://codepen.io/marianab/embed/gOOJJVp?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/marianab/pen/gOOJJVp'>SVG with &lt;use&gt;</a> by Mariana
+  (<a href='https://codepen.io/marianab'>@marianab</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+Si declaramos algún valor en los atributos que definimos dentro del elemento `<defs>` no será posible cambiarlo dentro de sus clones debido a la naturaleza del elemento `<use>`. Por eso en el ejemplo de arriba, el relleno del círculo principal fue reemplazado por el valor currentColor para poder tener control de los colores de fondo de todas las instancias replicadas. currentColor heredará en CSS el valor del color del elemento (o cualquier elemento arriba de éste). En el SVG, estoy agregando una clase a algunas replicas del astronauta y agregando un valor de color a esas clases en CSS. De esta forma, podré cambiar el color en todas las instancias del elemento `<use>` con esa clase. Para entender más acerca del `<use>` y cómo estilear su contenido, [este post](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) de [Sara Soueidan](https://www.sarasoueidan.com/) tiene todo lo que necesitas saber.
+
 Con el código listo, seremos capaces de escalar más fácilemente el gráfico inicial a algo así:
-Org chart con imágenes de astronautas, de mayor escala
 
-SVG Org Chart
+<figure>
+    <img src="/blog/blog-going-beyond-02.png" alt=""/>
+    <figcaption>SVG Org Chart.</figcaption>
+</figure>
 
 El código completo está en este Codepen:
 
-SVG Org Chart
+<iframe width="100%" height="300" scrolling="no" title="SVG Org Chart - reusing content " src="https://codepen.io/marianab/embed/abbrgag?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/marianab/pen/abbrgag'>SVG Org Chart - reusing content </a> by Mariana
+  (<a href='https://codepen.io/marianab'>@marianab</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 Acá están los tres ejemplos lado a lado para comparar legibilidad y cantidad de código, fuimos de 241 a 12 líneas:
-Comparación de cantidad de código entre los 3 ejemplos
-De izquierda a derecha: Código directo de Illustrator, código después de SVGOMG, código después de optimizar.
-Este artículo fue publicado originalmente en CSS-Tricks editado por Chris Coyier y Geoff Graham
+
+<figure>
+    <img src="/blog/blog-going-beyond-02.png" alt=""/>
+    <figcaption>From left to right: Code direct from Illustrator, code after SVGOMG, code after optimization.</figcaption>
+</figure>
+
+> Este artículo fue publicado originalmente en  [CSS-Tricks](https://css-tricks.com/going-beyond-automatic-svg-compression-with-the-use-element/) editado por [Chris Coyier](https://chriscoyier.net/) y [Geoff Graham](https://geoffgraham.me/)
