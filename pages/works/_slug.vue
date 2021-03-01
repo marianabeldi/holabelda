@@ -92,6 +92,9 @@ export default {
 }
 
 ul.tags {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
     position: absolute;
     top: 0;
     right: 30px;
@@ -106,7 +109,9 @@ ul.tags {
   }
 }
 ul.music-list {
+    list-style: none;
     margin-bottom: 30px;
+    padding-left: 0;
     li a {
       display: inline-block;
       font-size: 1.2rem;
@@ -126,6 +131,7 @@ ul.music-list {
   } 
 }
 ul.ul-list { 
+  list-style: none;
   padding-left: 1em; 
   li  {
     color:rgba(29, 29, 70, 0.7);
@@ -141,15 +147,19 @@ ul.ul-list {
 }
 
 .gallery {
+    list-style: none;
     column-count: 1;
     column-gap: 5px;
     margin-top: var(--navH);
+    padding-left: 0;
     video { max-width: 100%; }
 }
 .single {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
   margin-top: var(--navH);
+  padding-left: 0;
   li {
     flex: 2 0 64%;
     margin: 0 3%;

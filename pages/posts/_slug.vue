@@ -136,11 +136,11 @@ blockquote {
 code {
   background-color: var(--lightgrey);
   font-size: 1.1em;
+  word-break: break-word;
 }
 video { max-width: 100%; }
-.vimeo {
-  max-height: 80vh;
-}
+.vimeo { max-height: 80vh; }
+
 @media screen and (max-width: 56.25em) {
   blockquote {
     font-size: 1.3rem;
