@@ -20,13 +20,17 @@ category:
     <div class="content">
         <p class="content-date">August, 2020</p>
         <h1>Hola SVG</h1>
-        <p>Learn about SVG Shapes in <a target="_blank" rel="noreferrer" href="https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/">this CSS-Tricks article</a>. Grab your free icons on holasvg.com/icons and then play with them on Codepen.</p>
+        <p>This is a personal project where I build free web resources while trying to learn vue.js.<p>
+        <p>At the moment includes an SVG loader generator and a gallery of customizable icons.</p>
+        <p>Learn about SVG Shapes in <a target="_blank" rel="noreferrer" href="https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/">this CSS-Tricks article</a>.</p>
         <p>Find all open source icons at GitHub.</p>
         <h2>More info:</h2>
         <ul class="music-list">
+            <li><a target="_blank" rel="noreferrer" href="https://holasvg.com/loaders" class="heart">Hola SVG Loaders</a></li>
             <li><a target="_blank" rel="noreferrer" href="https://holasvg.com/icons" class="heart">Hola SVG Icons</a></li>
             <li><a target="_blank" rel="noreferrer" href="https://github.com/marianabeldi/holasvg-icons" class="heart">GitHub repo</a></li>
         </ul>
     </div>
-    <li><img src="/work/hola-01.png" alt=""></li>
+    <li><img src="/work/hola-03.gif" alt=""></li>
+    <li><img src="/work/hola-02.gif" alt=""></li>
 </ul>

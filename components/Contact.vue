@@ -1,7 +1,7 @@
 <template>
   <section class="contact wrapper" id="contact">
     <h2>Let's stay in touch.</h2>
-    <p>Say hi! <a mailto="info@holabelda.com">info@holabelda.com</a></p>
+    <p><a mailto="info@holabelda.com">info@holabelda.com</a></p>
     <div class="social">
       <a href="https://medium.com/@marianabelda" target="_blank" rel="noopener">
         <svg viewBox="2 0 46 46">

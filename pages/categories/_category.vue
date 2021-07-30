@@ -58,7 +58,7 @@ export default {
 <style lang="scss">
 .inner-post-body {
   margin: 0 auto;
-  max-width: 80ch;
+  max-width: 80ch;  
   padding: 2rem;
 }
 .result {

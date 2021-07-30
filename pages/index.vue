@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header title="Hola! My name is Mariana." text="I'm a designer from Argentina, building websites since 2006."/>
+        <Header title="Hola! My name is Mariana." text="This site is about things I like related to design, code, illustration, SVG, and communication."/>
       <main class="pattern border-top">
         <div class="wrapper">
           <div class="articles cards">
@@ -56,7 +56,9 @@
 
 
 <style lang="scss">
-
+.table-simple {
+    td, th { border: 1px solid; }
+}
 .cards {
     position: relative;
 }
