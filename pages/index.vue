@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header title="Hola! My name is Mariana." text="This site is about things I like related to design, code, illustration, SVG, and communication."/>
+        <Header title="Hola! My name is Mariana." text="This site is about things I like related to design, code, illustration, and SVG."/>
       <main class="pattern border-top">
         <div class="wrapper">
           <div class="articles cards">
