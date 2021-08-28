@@ -8,13 +8,13 @@ createdAt: 2020-08-02
 category: 
 - svg
 - nuxt
-- icons
+- webtools
 ---
 
 <ul class="tags">
     <li>SVG</li>
     <li>nuxt</li>
-    <li>icons</li>
+    <li>webtools</li>
 </ul>
 <ul class="single">
     <div class="content">
@@ -23,12 +23,14 @@ category:
         <p>This is a personal project where I build free web resources while trying to learn vue.js.<p>
         <p>At the moment includes an SVG loader generator and a gallery of customizable icons.</p>
         <p>Learn about SVG Shapes in <a target="_blank" rel="noreferrer" href="https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/">this CSS-Tricks article</a>.</p>
-        <p>Find all open source icons at GitHub.</p>
+        <p>Learn about SMIL and Saas in <a target="_blank" rel="noreferrer" href="https://css-tricks.com/how-i-made-a-generator-for-svg-loaders-with-sass-and-smil-options/">this CSS-Tricks article</a>.</p>
+        <p>Find both open source projects at GitHub.</p>
         <h2>More info:</h2>
         <ul class="music-list">
             <li><a target="_blank" rel="noreferrer" href="https://holasvg.com/loaders" class="heart">Hola SVG Loaders</a></li>
             <li><a target="_blank" rel="noreferrer" href="https://holasvg.com/icons" class="heart">Hola SVG Icons</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://github.com/marianabeldi/holasvg-icons" class="heart">GitHub repo</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/marianabeldi/holasvg-icons" class="heart">GitHub Icons repo</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/marianabeldi/holasvg-loaders" class="heart">GitHub Loaders repo</a></li>
         </ul>
     </div>
     <li><img src="/work/hola-03.gif" alt=""></li>
