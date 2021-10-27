@@ -5,6 +5,12 @@
         <div class="wrapper">
           <div class="articles cards">
             <h2>Articles</h2>
+            <a class="card" href="https://css-tricks.com/how-i-made-a-generator-for-svg-loaders-with-sass-and-smil-options/" target="_blank" rel="noopener">
+              <img src="./../assets/images/th-css_tricks04.jpg" alt="" loading="lazy">
+              <p class="card-subtitle">Article</p>
+              <h3>How I Made a Generator for SVG Loaders With Sass and SMIL Options</h3>
+              <p class="view read">Read on CSS-tricks</p>
+            </a>
             <a class="card" href="https://css-tricks.com/how-to-simplify-svg-code-using-basic-shapes/" target="_blank" rel="noopener">
               <img src="./../assets/images/th-css_tricks03.jpg" alt="" loading="lazy">
               <p class="card-subtitle">Article</p>
@@ -15,12 +21,6 @@
               <img src="./../assets/images/th-css_tricks01.jpg" alt="" loading="lazy">
               <p class="card-subtitle">Article</p>
               <h3>Use and Reuse Everything in SVG… Even Animations!</h3>
-              <p class="view read">Read on CSS-tricks</p>
-            </a>
-            <a class="card" href="https://css-tricks.com/going-beyond-automatic-svg-compression-with-the-use-element/" target="_blank" rel="noopener">
-              <img src="./../assets/images/th-css_tricks02.jpg" alt="" loading="lazy">
-              <p class="card-subtitle">Article</p>
-              <h3>Going Beyond Automatic SVG Compression With the “use” Element</h3>
               <p class="view read">Read on CSS-tricks</p>
             </a>
           </div>

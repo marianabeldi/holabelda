@@ -21,8 +21,21 @@ export default {
     async routes () {
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
-
       return files.map(file => file.path === '/index' ? '/' : file.path)
     }
-  }
+  },
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-83697602-1',
+      autoTracking: {
+        pageviewTemplate: route => {
+            return {
+                page: route.path,
+                title: window.document.title,
+                location: window.location.href,
+            };
+        }
+      }
+    }]
+  ]
 }
