@@ -89,9 +89,9 @@ There are a few ways to export the SVG, the easiest one is to copy the vectors f
 	<figcaption>Copy/paste from Illustrator to text editor</figcaption>
 </figure>
 
-The software adds a lot of code that is not necessary and hurts legibility and performance. That's why a tool like <a target="_blank" href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> helps us optimize the file in a fast and easy way. Going deeper in that direction, <a target="_blank" href="{% post_url 2020-05-06-Going-beyond-automatic-SVG-compression %}">manual optimization</a> is usually part of our process. Another important thing to keep in mind is that SVG is a great ally for accessibility.
+The software adds a lot of code that is not necessary and hurts legibility and performance. That's why a tool like <a target="_blank" href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> helps us optimize the file in a fast and easy way. Going deeper in that direction, manual optimization is usually part of our process. Another important thing to keep in mind is that SVG is a great ally for accessibility.
 
-Now we have our code clean and we can start adding classes to the elements we want to animate. In this case, <a target="_blank" href="{% post_url 2020-04-02-use-and-reuse-everything-in-SVG %}">CSS animations</a> were enough to build these simple animations.
+Now we have our code clean and we can start adding classes to the elements we want to animate. In this case, CSS animations were enough to build these simple animations.
 
 This was the result for the Login page, the SVG illustration weights only <strong>42k after optimization:</strong>
 
