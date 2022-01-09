@@ -24,37 +24,32 @@ Comfort Shatter is an app that brings users challenges to break out of their com
 
 ### Wireframes
 Starting with some sketches. get the ideas out of the head and down on paper.
-Picture of a book with handmade sketches
-First draft with user flow.
 
 <figure>
-    <img src="/blog/blog-comfort-shatter-02.jpg" alt=""/>
+    <img src="/blog/blog-comfort-shatter-02.jpg" alt="Picture of a book with handmade sketches"/>
     <figcaption>First draft with user flow.</figcaption>
 </figure>
 
 ### Design inspiration
 Looking for some vibrant colors for a modern palette, friendly monsters to represent the challenges, rounded shapes, and brush fonts.
-moon board of inspiration
-Vibrant colors, friendly monsters.
 
-<img src="/blog/blog-comfort-shatter-03.jpg" alt=""/>
+<figure>
+    <img src="/blog/blog-comfort-shatter-03.jpg" alt="Vibrant colors, friendly monsters."/>
+    <figcaption>Mood board of inspiration</figcaption>
+</figure>
 
 ## Designing the app
 Time to work on some high fidelity mockups. Looking for color contrast, adjusting character design and setting the rules for future screenshots.
-Screenshots of the mobile app
-High fidelity mockups.
+
 <figure>
-    <img src="/blog/blog-comfort-shatter-01.jpg" alt=""/>
+    <img src="/blog/blog-comfort-shatter-01.jpg" alt="Screenshots of the mobile app"/>
     <figcaption>High fidelity mockups.</figcaption>
 </figure>
 
 
 ## Guidelines
 Montserrat as the main font for legibility across the site and VTS Supermarket sale for outstanding titles. Using round shapes and circles for a friendly look and feel.
-Screenshot of guidelines
-Fonts and color palette.
-Screenshot of guidelines
-Design elements and guidelines.
+
 <figure>
     <img src="/blog/blog-comfort-shatter-04.jpg" alt=""/>
     <figcaption>Fonts and color palette.</figcaption>
@@ -67,10 +62,9 @@ Design elements and guidelines.
 
 ### User flow
 Sketching the user flow before building the final prototype.
-screenshot of mobile app with arrows showing the user flow
-User flow sketch.
+
 <figure>
-    <img src="/blog/blog-comfort-shatter-06.jpg" alt=""/>
+    <img src="/blog/blog-comfort-shatter-06.jpg" alt="screenshot of mobile app with arrows showing the user flow"/>
     <figcaption>User flow sketch.</figcaption>
 </figure>
 

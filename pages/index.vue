@@ -23,9 +23,21 @@
               <h3>Use and Reuse Everything in SVG… Even Animations!</h3>
               <p class="view read">Read on CSS-tricks</p>
             </a>
+            <!-- <a class="card" href="https://css-tricks.com/use-and-reuse-everything-in-svg-even-animations/" target="_blank" rel="noopener">
+              <img src="./../assets/images/th-css_tricks01.jpg" alt="" loading="lazy">
+              <p class="card-subtitle">Article</p>
+              <h3>Use and Reuse Everything in SVG… Even Animations!</h3>
+              <p class="view read">Read on CSS-tricks</p>
+            </a> -->
           </div>
           <div class="articles cards">
             <h2>Case Studies</h2>
+            <!-- <a class="card" href="https://medium.muz.li/adding-value-to-our-clients-platform-and-brand-fdf94856116" target="_blank" rel="noopener">
+              <img src="./../assets/images/th-sod-.jpg" alt="" loading="lazy">
+              <p class="card-subtitle">Illustration & Brand</p>
+              <h3>Adding value to our client's platform and brand</h3>
+              <p class="view read">Read on Muzli</p>
+            </a> -->
             <a class="card" href="https://medium.muz.li/adding-value-to-our-clients-platform-and-brand-fdf94856116" target="_blank" rel="noopener">
               <img src="./../assets/images/th-sod-.jpg" alt="" loading="lazy">
               <p class="card-subtitle">Illustration & Brand</p>
