@@ -3,7 +3,7 @@ export default {
   components: true,
   modules: ['@nuxt/content'],
   head: {
-    title: 'Hola Belda',
+    title: 'Hola Belda · Portfolio, blog, talks, about SVG, code and design',
     htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
@@ -17,12 +17,12 @@ export default {
         content: 'Blog, talks and free tools about things I like related to design, code, illustration, and SVG.',
         hid: 'og:type', property: 'og:type', content: 'website',
         hid: 'og:url', property: 'og:url', content: 'https://holasvg.com/',
-        hid: 'og:title', property: 'og:title', content: 'Hola Belda',
+        hid: 'og:title', property: 'og:title', content: 'Hola Belda · Portfolio, blog, talks, about SVG, code and design',
         hid: 'og:description', property: 'og:description', content: 'Blog, talks and free tools about things I like related to design, code, illustration, and SVG.',
         hid: 'og:image', property: 'og:image', content: '/meta-img.jpg',
         hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image',
         hid: 'twitter:url', property: 'twitter:url', content: 'https://holasvg.com/',
-        hid: 'twitter:title', property: 'twitter:title', content: 'Hola Belda',
+        hid: 'twitter:title', property: 'twitter:title', content: 'Hola Belda · Portfolio, blog, talks, about SVG, code and design',
         hid: 'twitter:description', property: 'twitter:description', content: 'Blog, talks and free tools about things I like related to design, code, illustration, and SVG.',
         hid: 'twitter:image', property: 'twitter:image', content: '/meta-img.jpg',
       },
